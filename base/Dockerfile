@@ -1,7 +1,7 @@
 FROM ubuntu:xenial
 LABEL maintainer="Sphinx Team <https://github.com/sphinx-doc/sphinx>"
 
-RUN mkdir /docs
+WORKDIR /docs
 RUN apt-get update \
  && apt-get install -y \
       curl \
