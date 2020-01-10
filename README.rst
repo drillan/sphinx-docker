@@ -16,15 +16,15 @@ Usage
 
 Create a Sphinx project::
 
-  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx:base sphinx-quickstart
+  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx sphinx-quickstart
 
 Build HTML document::
 
-  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx:base make html
+  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx make html
 
 Build EPUB document::
 
-  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx:base make epub
+  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx make epub
 
 Build PDF document::
 
@@ -32,7 +32,15 @@ Build PDF document::
 
 Build HTML document with specified version::
 
-  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx:base2.3 make html
+  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx:2.3 make html
+
+Build EPUB document with specified version::
+
+  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx:2.3 make epub
+
+Build PDF document with specified version::
+
+  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx:pdf2.3 make latexpdf
 
 Tips
 ----
