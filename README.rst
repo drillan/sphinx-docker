@@ -14,6 +14,10 @@ Images
 Usage
 -----
 
+Create a Sphinx project::
+
+  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx:base sphinx-quickstart
+
 Build HTML document::
 
   $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx:base make html
