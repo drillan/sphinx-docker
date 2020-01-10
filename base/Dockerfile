@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM python:slim
 LABEL maintainer="Sphinx Team <https://github.com/sphinx-doc/sphinx>"
 
 WORKDIR /docs
@@ -8,13 +8,10 @@ RUN apt-get update \
       git \
       graphviz \
       make \
-      python3 \
-      python3-dev \
-      python3-pip \
-      python3-pil \
       unzip \
       vim \
  && apt-get autoremove \
  && apt-get clean
 
-RUN pip3 install Sphinx==2.0.1
+RUN python3 -m pip install -U pip
+RUN python3 -m pip install Sphinx
