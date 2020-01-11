@@ -13,4 +13,4 @@ RUN apt-get update \
 RUN python3 -m pip install -U pip
 RUN python3 -m pip install Sphinx Pillow
 
-CMD "if [ -e "requirements.txt" ]; then python -m pip install -r requirements.txt; fi; make html"
+CMD ["make", "html"]
