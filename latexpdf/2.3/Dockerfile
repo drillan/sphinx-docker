@@ -1,4 +1,4 @@
-FROM driller/sphinx:pdf
+FROM sphinxdoc/sphinx-latexpdf
 LABEL maintainer="Sphinx Team <https://github.com/sphinx-doc/sphinx>"
 
 WORKDIR /docs
