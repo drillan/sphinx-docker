@@ -1,5 +1,5 @@
 FROM sphinxdoc/sphinx
-LABEL maintainer="Sphinx Team <https://github.com/sphinx-doc/sphinx>"
+LABEL maintainer="Sphinx Team <https://www.sphinx-doc.org/>"
 
 RUN apt-get install -y \
       latexmk \
