@@ -14,3 +14,5 @@ RUN apt-get install -y \
       texlive-xetex \
  && apt-get autoremove \
  && apt-get clean
+
+CMD ["make", "latexpdf"]

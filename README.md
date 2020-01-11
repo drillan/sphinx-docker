@@ -25,6 +25,12 @@ Build HTML document::
 $ docker run --rm -v /path/to/document:/docs sphinxdoc/sphinx make html
 ```
 
+or
+
+```bash
+$ docker run --rm -v /path/to/document:/docs sphinxdoc/sphinx
+```
+
 Build EPUB document::
 
 ```bash
@@ -37,10 +43,22 @@ Build PDF document::
 $ docker run --rm -v /path/to/document:/docs sphinxdoc/sphinx-latexpdf make latexpdf
 ```
 
+or
+
+```bash
+$ docker run --rm -v /path/to/document:/docs sphinxdoc/sphinx-latexpdf
+```
+
 Build HTML document with specified version::
 
 ```bash
 $ docker run --rm -v /path/to/document:/docs sphinxdoc/sphinx:2.3 make html
+```
+
+or
+
+```bash
+$ docker run --rm -v /path/to/document:/docs sphinxdoc/sphinx:2.3
 ```
 
 Build EPUB document with specified version::
@@ -49,10 +67,16 @@ Build EPUB document with specified version::
 $ docker run --rm -v /path/to/document:/docs sphinxdoc/sphinx:2.3 make epub
 ```
 
-Build 
+Build PDF document with specified version::
 
 ```bash
 $ docker run --rm -v /path/to/document:/docs sphinxdoc/sphinx-latexpdf:2.3 make latexpdf
+```
+
+or
+
+```bash
+$ docker run --rm -v /path/to/document:/docs sphinxdoc/sphinx-latexpdf:2.3
 ```
 
 ## Tips
